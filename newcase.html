@@ -22,7 +22,7 @@
 	<ul>
 		<li><a href="dashboard.html">Dashboard</a></li>
 		<li class="active"><a href="newcase.html">New Case</a></li>
-		<li><a href="contempt.html">Contempt/Appeal</a></li>
+		<li><a href="contempt.html">Contempt</a></li>
 		<li><a href="proceeding.html">Case Proceeding</a></li>
 		<li><a href="report.html">Report</a></li>
 		<li style="float:right"><a href="#about">Logout</a></li>
@@ -38,11 +38,11 @@
 			<fieldset>
 				<legend><strong>New Case</strong></legend>
 					
-						<label>Court</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Case Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Case No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Case Year</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label for="ctitle">Title of case</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Court</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<label>Case Type</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+						<label>Case No.</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+						<label>Case Year</label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+						<label for="ctitle">Title of case</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
 						<label>Rank of Petitioner</label><br>
 						<select selected name="court"  id="court" required>
 							<option  value="" >--Select Court--</option>
@@ -60,15 +60,15 @@
 							<option value="SLT">SLT</option>
 							<option value="FAO">FAO</option>
 							<option value="RFA">RFA</option>
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="casenum" id="casenum" required>&nbsp;
+						</select>&emsp;&nbsp;
+						<input type="text" name="casenum" id="casenum" required>&emsp;&nbsp;
 						<select selected name="caseyear" id="caseyear" required>
 							<option  value="" >--Select Year--</option>
 							<option value="2021">2021</option>
 							<option value="2020">2020</option>
 							<option value="2019">2019 </option>
 							<option value="2018">2018</option>
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</select>&emsp;&nbsp;
 						<input type="text" name="casetitle" id="casetitle" required>&nbsp;
 						<select selected name="rank" id="rank" required>
 							<option value="">--Select Rank--</option>
@@ -87,10 +87,10 @@
 						
 						<br><br>
 						
-						<label>Subject Matter</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Unit</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Branch</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Present Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Subject Matter</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+						<label>Unit</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+						<label>Branch</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<label>Present Status</label>&emsp;&emsp;&emsp;
 						<label>Written Statement</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<label>Next Hearing Date</label>
 						<br>
@@ -103,6 +103,7 @@
 						</select>&nbsp;
 						<select selected name="unit" id="unit" required>
 							<option value="">--Select Unit--</option>
+							<option value="Gurugram">PHQ</option>
 							<option value="Gurugram">Gurugram</option>
 							<option value="Faridabad">Faridabad</option>
 							<option value="Panchkula">Panchkula</option>
@@ -134,7 +135,7 @@
 							<option value="HPA, Madhuban">HPA, Madhuban</option>
 							<option value="Traffic">Traffic</option>
 							<option value="HSNCB">HSNCB</option>
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</select>&emsp;&emsp;
 						<select selected name="Branch" id="Branch" required>
 							<option value="">--Select Branch/ PHQ--</option>
 							<option value="Special Cell">Special Cell</option>
@@ -155,7 +156,7 @@
 							<option value="JVC Cell">JVC Cell</option>
 							<option value="SJW Branch">SJW Branch</option>
 							<option value="Estt-I Branch">Estt-I Branch</option>
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</select>&emsp;&emsp;
 						<select selected name ="nextdate" id ="nextdate" required>
 						<option value="Next Date Fix">Next Date Fix</option>
 							<!--<option selected disabled>--Select Status--</option>
@@ -165,17 +166,17 @@
 							<option>Dispossed Off</option>
 							<option>Dismissed</option>
 							<option>Sine Die</option>-->
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</select>&emsp;&emsp;
 						<select disabled>
 							<option selected disabled>--Select--</option>
 							<option>NO</option>
 							<option>YES</option>
 							
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</select>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 						<input type="date" name="hearingdate" id="hearingdate" required>
 						
 						<br><br>
-						<label>Operative part of Order</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Operative part of Order</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 						<label>Action Taken</label>
 						<br>
 						<textarea rows="3" cols="65" name="oprative" id="oprative" required ></textarea>
