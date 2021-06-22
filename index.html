@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>LEGAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Computer Professional">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="log.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-padding" id="myHeader">
+  <br>
+  <div class="w3-center" >
+  	<div class="login">
+		<h2 class="active"><strong>Welcome to LEGAL Electronic System</strong><br><br>sign in </h2>
+		  <form name="login">
+			<input type="text" class="text" name="username">
+			 <span>username</span> <br>  <br>
+			<input type="password" class="text" name="password">
+			<span>password</span><br><br><br><br><br><br><br>
+			<input class="signin" type="button" onclick="check(this.form)" value="Sign In"/>
+			<!--<a class="signin" href="dashboard.html">Sign In</a>-->
+			<hr>
+		   </form>
+		   <script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.username.value == "branch" && form.password.value == "branch1")
+  {
+    window.open('dashboard.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+	</div><br><br><br><br>
+    
+  </div>
+</header>
+
+<!-- Footer
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  
+</footer> -->
+</body>
+</html>

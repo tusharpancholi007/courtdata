@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<title>LEGAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Computer professional IT Cell PHQ">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Side Navigation -->
+
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding">
+	<div class="w3-center">
+     	<h3 class="w3-animate-bottom">Welcome to LEGAL Electronic System</h3>
+	</div>
+  <nav>
+	<ul>
+		<li><a href="dashboard.html">Dashboard</a></li>
+		<li class="active"><a href="newcase.html">New Case</a></li>
+		<li><a href="contempt.html">Contempt/Appeal</a></li>
+		<li><a href="proceeding.html">Case Proceeding</a></li>
+		<li><a href="report.html">Report</a></li>
+		<li style="float:right"><a href="#about">Logout</a></li>
+	</ul>
+	</nav>
+  
+</header>
+<br>
+<!-- Modal -->
+<div class="w3-container">
+	<div>
+    	<div>
+			<fieldset>
+				<legend><strong>New Case</strong></legend>
+					
+						<label>Court</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Year</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label for="ctitle">Title of case</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Rank of Petitioner</label><br>
+						<select selected name="court"  id="court" required>
+							<option  value="" >--Select Court--</option>
+							<option value="Supreme Court">Supreme Court</option>
+							<option value="High Court">High Court</option>
+							<option value="Session Court">Session Court</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select selected name="casetype" id="casetype" required>
+							<option value="" >--Select Case Type--</option>
+							<option value="CWP">CWP</option>
+							<option value="COCP">COCP</option>
+							<option value="LPA">LPA</option>
+							<option value="RSA">RSA</option>
+							<option value="RA">RA</option>
+							<option value="SLT">SLT</option>
+							<option value="FAO">FAO</option>
+							<option value="RFA">RFA</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="casenum" id="casenum" required>&nbsp;
+						<select selected name="caseyear" id="caseyear" required>
+							<option  value="" >--Select Year--</option>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019 </option>
+							<option value="2018">2018</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="casetitle" id="casetitle" required>&nbsp;
+						<select selected name="rank" id="rank" required>
+							<option value="">--Select Rank--</option>
+							<option value="DGP">DGP</option>
+							<option value="ADGP">ADGP</option>
+							<option value="DIG">DIG</option>
+							<option value="IG">IG</option>
+							<option value="SP">SP</option>
+							<option value="DSP">DSP</option>
+							<option value="Inspector">Inspector</option>
+							<option value="SI">SI</option>
+							<option value="ASI">ASI</option>
+							<option value="HC">HC</option>
+							<option value="Constable">Constable</option>
+						</select>
+						
+						<br><br>
+						
+						<label>Subject Matter</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Unit</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Branch</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Present Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Written Statement</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Next Hearing Date</label>
+						<br>
+						<select selected name="Subjctmatter" id="Subjctmatter" required>
+							<option value="">--Select Subject--</option>
+							<option value="ACR">ACR</option>
+							<option value="ACP SCALE">ACP SCALE </option>
+							<option value="INCREMENT STOPPAGE">INCREMENT STOPPAGE</option>
+							<option value="RECRUITMENT">RECRUITMENT</option>
+						</select>&nbsp;
+						<select selected name="unit" id="unit" required>
+							<option value="">--Select Unit--</option>
+							<option value="Gurugram">Gurugram</option>
+							<option value="Faridabad">Faridabad</option>
+							<option value="Panchkula">Panchkula</option>
+							<option value="Ambala">Ambala</option>
+							<option value="Kurukshetra">Kurukshetra</option>
+							<option value="Yamunanagar">Yamunanagar</option>
+							<option value="Karnal">Karnal</option>
+							<option value="Kaithal">Kaithal</option>
+							<option value="Panipat">Panipat</option>
+							<option value="Rohtak">Rohtak</option>
+							<option value="Sonipat">Sonipat</option>
+							<option value="Jhajjar">Jhajjar</option>
+							<option value="Bhiwani">Bhiwani</option>
+							<option value="Charkhi Dadri">Charkhi Dadri</option>
+							<option value="Hisar">Hisar</option>
+							<option value="Sirsa">Sirsa</option>
+							<option value="Jind">Jind</option>
+							<option value="Fatehabad">Fatehabad</option>
+							<option value="Hansi">Hansi</option>
+							<option value="Rewari">Rewari</option>
+							<option value="Mahendergarh">Mahendergarh</option>
+							<option value="Ambala Range">Ambala Range</option>
+							<option value="Karnal Range">Karnal Range</option>
+							<option value="ADGP/Railways">ADGP/Railways</option>
+							<option value="IGP/PTC, Sunaria">IGP/PTC, Sunaria</option>
+							<option value="CID">CID</option>
+							<option value="State Crime Branch">State Crime Branch</option>
+							<option value="SCRB">SCRB</option>
+							<option value="HPA, Madhuban">HPA, Madhuban</option>
+							<option value="Traffic">Traffic</option>
+							<option value="HSNCB">HSNCB</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select selected name="Branch" id="Branch" required>
+							<option value="">--Select Branch/ PHQ--</option>
+							<option value="Special Cell">Special Cell</option>
+							<option value="Training Branch">Training Branch</option>
+							<option value="HSPSA">HSPSA</option>
+							<option value="Complaint Branch">Complaint Branch</option>
+							<option value="GA Branch">GA Branch</option>
+							<option value="Community Branch">Community Branch</option>
+							<option value="Law & Order Branch">Law & Order Branch</option>
+							<option value="Estt-III Branch">Estt-III Branch</option>
+							<option value="Account Branch">Account Branch</option>
+							<option value="Provising Branch">Provising Branch</option>
+							<option value="Estt.-II Branch">Estt.-II Branch</option>
+							<option value="Women Safety Cell">Women Safety Cell</option>
+							<option value="Welfare Branch">Welfare Branch</option>
+							<option value="RTI Cell">RTI Cell</option>
+							<option value="NRI Cell">NRI Cell</option>
+							<option value="JVC Cell">JVC Cell</option>
+							<option value="SJW Branch">SJW Branch</option>
+							<option value="Estt-I Branch">Estt-I Branch</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select selected name ="nextdate" id ="nextdate" required>
+						<option value="Next Date Fix">Next Date Fix</option>
+							<!--<option selected disabled>--Select Status--</option>
+							<option>Admitted</option>
+							<option>No Date Fixed  </option>
+							<option>Allowed</option>
+							<option>Dispossed Off</option>
+							<option>Dismissed</option>
+							<option>Sine Die</option>-->
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select disabled>
+							<option selected disabled>--Select--</option>
+							<option>NO</option>
+							<option>YES</option>
+							
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="date" name="hearingdate" id="hearingdate" required>
+						
+						<br><br>
+						<label>Operative part of Order</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Action Taken</label>
+						<br>
+						<textarea rows="3" cols="65" name="oprative" id="oprative" required ></textarea>
+						<textarea rows="3" cols="65" name="action" id="action" required></textarea>
+						
+						<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="button" name="button" class="w3-button w3-theme w3-center"  value="Submit" onclick="AddRow()">
+						<!--<input type="submit" class="w3-button w3-theme w3-center">-->
+						
+						<!--<label>Alert Type:</label><select>
+							<option selected disabled>--Select--</option>
+							<option>STAY</option>
+							<option>INTERIM DIRECTION</option>
+							<option>PERSONAL APPEARANCE</option>
+						</select>-->
+					
+					
+			</fieldset>
+			<table border="4" id="show">
+			<thead>
+				<tr>
+					<th>Court</th>
+					<th>Case Type</th>
+					<th>Case Number</th>
+					<th>Case Year</th>
+					<th>Title of Case</th>
+					<th>Rank of petitioner</th>
+					<th>Subject Matter</th>
+					<th>Unit</th>
+					<th>Branch</th>
+					<th>Present Status</th>
+					<th>Next Hearing Date</th>
+					<th>Operative part of Order</th>
+					<th>Action Taken</th>
+				</tr>
+			</thead>
+		</table>
+			<script>
+		
+		var list1 = [];
+		var list2 = [];
+		var list3 = [];
+		var list4 = [];
+		var list5 = [];
+		var list6 = [];
+		var list7 = [];
+		var list8 = [];
+		var list9 = [];
+		var list10 = [];
+		var list11 = [];
+		var list12 = [];
+		var list13 = [];
+		
+
+		var n = 1;
+		var x = 0;
+
+		function AddRow(){
+
+			var AddRown = document.getElementById('show');
+			var NewRow = AddRown.insertRow(n);
+
+			list1[x] = document.getElementById("court").value;
+			/*element = document.getElementById('court');
+if (element != null) {
+    list1[x] = element.value;
+}
+else {
+    list1[x] = null;
+}*/
+
+
+			list2[x] = document.getElementById("casetype").value;
+			list3[x] = document.getElementById("casenum").value;
+			list4[x] = document.getElementById("caseyear").value;
+			list5[x] = document.getElementById("casetitle").value;
+			list6[x] = document.getElementById("rank").value;
+			list7[x] = document.getElementById("Subjctmatter").value;
+			list8[x] = document.getElementById("unit").value;
+			list9[x] = document.getElementById("Branch").value;
+			list10[x] = document.getElementById("nextdate").value;
+			list11[x] = document.getElementById("hearingdate").value;
+			list12[x] = document.getElementById("oprative").value;
+			list13[x] = document.getElementById("action").value;
+
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+			var cel3 = NewRow.insertCell(2);
+			var cel4 = NewRow.insertCell(3);
+			var cel5 = NewRow.insertCell(4);
+			var cel6 = NewRow.insertCell(5);
+			var cel7 = NewRow.insertCell(6);
+			var cel8 = NewRow.insertCell(7);
+			var cel9 = NewRow.insertCell(8);
+			var cel10 = NewRow.insertCell(9);
+			var cel11 = NewRow.insertCell(10);
+			var cel12 = NewRow.insertCell(11);
+			var cel13 = NewRow.insertCell(12);
+
+			cel1.innerHTML = list1[x];
+			cel2.innerHTML = list2[x];
+			cel3.innerHTML = list3[x];
+			cel4.innerHTML = list4[x];
+			cel5.innerHTML = list5[x];
+			cel6.innerHTML = list6[x];
+			cel7.innerHTML = list7[x];
+			cel8.innerHTML = list8[x];
+			cel9.innerHTML = list9[x];
+			cel10.innerHTML = list10[x];
+			cel11.innerHTML = list11[x];
+			cel12.innerHTML = list12[x];
+			cel13.innerHTML = list13[x];
+			
+
+			n++;
+			x++;
+		}
+
+	</script>
+			
+			
+		</div>
+	</div>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16" style="text-align: center;">
+   <b>Designed by IT-Cell, PHQ (Haryana).
+</footer>
+</div>
+
+	
+</body>
+</html>

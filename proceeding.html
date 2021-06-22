@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<title>LEGAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Computer professional IT Cell PHQ">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="pop.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<body>
+
+<!-- Side Navigation -->
+
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding">
+	<div class="w3-center">
+     	<h3 class="w3-animate-bottom">Welcome to LEGAL Electronic System</h3>
+	</div>
+  <nav>
+	<ul>
+		<li><a href="dashboard.html">Dashboard</a></li>
+		<li><a href="newcase.html">New Case</a></li>
+		<li><a href="contempt.html">Contempt/Appeal</a></li>
+		<li class="active"><a href="proceeding.html">Case Proceeding</a></li>
+		<li><a href="report.html">Report</a></li>
+		<li style="float:right"><a href="#about">Logout</a></li>
+	</ul>
+	</nav>
+  
+</header>
+<br>
+<!-- Modal -->
+<div class="w3-container">
+	<div>
+    	<div>
+			<fieldset>
+				<legend><strong>Case Proceeding</strong></legend>
+					<form action="/">
+						<label>Court Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Nature</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Year</label>
+						<br>
+						<select>
+							<option selected disabled>--Select Court--</option>
+							<option>Supreme Court</option>
+							<option>High Court</option>
+							<option>Session Court</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select>
+							<option selected disabled>--Select Nature--</option>
+							<option>CWP</option>
+							<option>COCP</option>
+							<option>LPA</option>
+							<option>RSA</option>
+							<option>RA</option>
+							<option>SLT</option>
+							<option>FAO</option>
+							<option>RFA</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" id="cno" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select>
+							<option selected disabled>--Select Year--</option>
+							<option>2021</option>
+							<option>2020</option>
+							<option>2019 </option>
+							<option>2018</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="Search"class="w3-theme">
+						<br><br>
+						
+						<div class="w3-responsive w3-card-4">
+							<table class="w3-table w3-striped w3-bordered">
+							<thead>
+							<tr class="w3-theme">
+							  <th>Case Nature </th>
+							  <th>Case No. </th>
+							  <th>Year</th>
+							  <th>Title of case</th>
+							  <th>Subject Matter</th>
+							  <th>Hearing Date</th>
+							  <th>Written Statement</th>
+							  <th>Time Given</th>
+							  <th></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							  <td>CWP</td>
+							  <td>9072</td>
+							  <td>2018</td>
+							  <td>PROMOTIONAL CASE</td>
+							  <td>ACR</td>
+							  <td>21/06/2021</td>
+							  <td>YES</td>
+							  <td>90DAYS</td>
+							 <td> <button id="myBtn" type="button"target="_blank">PROCEED</button></td>
+							 <!-- <td><input type="submit" value="PROCEED"></td>-->
+							</tr>
+							<tr class="w3-white">
+							  <td>COCP</td>
+							  <td>4058</td>
+							  <td>2020</td>
+							  <td>DEMOTION CASE</td>
+							  <td>ACP SCALE</td>
+							  <td>27/07/2021</td>
+							  <td>NO</td>
+							  <td>60 DAYS</td>
+							  <td><input type="submit" value="PROCEED"></td>
+							</tr>
+							<tr>
+							  <td>LPA</td>
+							  <td>6578</td>
+							  <td>2019</td>
+							  <td>ILLEGAL ACTIVITY</td>
+							  <td>STOPPAGE OF INC.</td>
+							  <td>08/08/2021</td>
+							  <td>NO</td>
+							  <td>90 DAYS</td>
+							  <td><input type="submit" value="PROCEED"></td>
+							</tr>
+							<tr>
+							  <td>RSA</td>
+							  <td>2158</td>
+							  <td>2020</td>
+							  <td>DRUGS CONNECTION</td>
+							  <td>RECRUITMENT</td>
+							  <td>11/07/2021</td>
+							  <td>YES</td>
+							  <td>120DAYS</td>
+							  <td><input type="submit" value="PROCEED"></td>
+							</tr>
+							</tbody>
+							</table>
+							</div>
+						
+						
+						<!--<label>Alert Type:</label><select>
+							<option selected disabled>--Select--</option>
+							<option>STAY</option>
+							<option>INTERIM DIRECTION</option>
+							<option>PERSONAL APPEARANCE</option>
+						</select>-->
+					</form>
+			</fieldset>
+			
+		</div>
+	</div>	
+	<br>
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<span class="close">&times;</span>
+			<div class="w3-container">
+				<div>
+					<div>
+						<fieldset>
+							
+								<form action="/">
+									
+									<label>Present Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label>Written Statement</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label>Hearing Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label>Judgement By</label>
+									
+									<br>
+									<select>
+										<option selected disabled>--Select Status--</option>
+										<option>Admitted</option>
+										<option>No Date Fixed  </option>
+										<option>Allowed</option>
+										<option>Dispossed Off</option>
+										<option>Dismissed</option>
+										<option>Sine Die</option>
+									</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<select>
+										<option selected disabled>--Select--</option>
+										<option>YES</option>
+										<option>NO</option>
+									</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text" id="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<select>
+										<option selected disabled>--Select Name--</option>
+										<option>Mr. Jai Dev</option>
+										<option>Mr. Jetha Lal</option>
+										<option>Mr. Varindr Kumar</option>
+										<option>Mrs. Pushpa Devi</option>
+									</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									
+									
+									<br><br>
+									
+									<label>Order & Judgement Implemented</label>&nbsp;&nbsp;&nbsp;&nbsp;
+									<label>Time given for Implementations of Order & Judgement</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label>Date of Judgement/Order</label>
+									<br>
+									
+									
+									<select>
+										<option selected disabled>--Select--</option>
+										<option>YES</option>
+										<option>NO</option>
+									</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text" id="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text" id="#">
+									<br><br>
+									
+									<label>Operative/Relevent part of Judgement/Order/Directions</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label>Remarks</label>
+									<br>
+									<textarea rows="2" cols="42"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<textarea rows="2" cols="42"></textarea>
+									
+									<br><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="submit" value="Submit" class="w3-button w3-theme w3-center">
+									
+									<!--<label>Alert Type:</label><select>
+										<option selected disabled>--Select--</option>
+										<option>STAY</option>
+										<option>INTERIM DIRECTION</option>
+										<option>PERSONAL APPEARANCE</option>
+									</select>-->
+								</form>
+						</fieldset>
+						
+					</div>
+				</div>	
+				<br>
+			</div>
+		
+		
+		
+		
+	  </div>
+
+	</div>
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16" style="text-align: center;">
+   <b>Designed by IT-Cell, PHQ (Haryana).
+</footer>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
