@@ -22,7 +22,7 @@
 	<ul>
 		<li><a href="dashboard.html">Dashboard</a></li>
 		<li><a href="newcase.html">New Case</a></li>
-		<li class="active"><a href="contempt.html">Contempt/Appeal</a></li>
+		<li class="active"><a href="contempt.html">Contempt</a></li>
 		<li><a href="proceeding.html">Case Proceeding</a></li>
 		<li><a href="report.html">Report</a></li>
 		<li style="float:right"><a href="#about">Logout</a></li>
@@ -38,19 +38,12 @@
 			<fieldset>
 				<legend><strong>Contempt/Appeal</strong></legend>
 					<form action="/">
-						<label>Court Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<label>Case Nature</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<label>Case No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<label>Case Year</label>
 						<br>
 						<select>
-							<option selected disabled>--Select Court--</option>
-							<option>Supreme Court</option>
-							<option>High Court</option>
-							<option>Session Court</option>
-						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<select>
-							<option selected disabled>--Select Nature--</option>
+							<option selected disabled>--Select Type--</option>
 							<option>CWP</option>
 							<option>COCP</option>
 							<option>LPA</option>
@@ -84,6 +77,7 @@
 							  <th>Written Statement</th>
 							  <th>Time Given</th>
 							  <th></th>
+							  <th></th>
 							</tr>
 							</thead>
 							<tbody>
@@ -96,43 +90,12 @@
 							  <td>21/06/2021</td>
 							  <td>YES</td>
 							  <td>90DAYS</td>
-							  <td> <button id="myBtn" type="button">TAG</button></td>
+							  <td> <button id="myBtn" type="button">Link</button></td>
+							  <td> <button id="myBtn" type="button">View</button></td>
 							 <!-- <td><input type="submit" value="TAG"></td>-->
 							  
 							</tr>
-							<tr class="w3-white">
-							  <td>COCP</td>
-							  <td>4058</td>
-							  <td>2020</td>
-							  <td>DEMOTION CASE</td>
-							  <td>ACP SCALE</td>
-							  <td>27/07/2021</td>
-							  <td>NO</td>
-							  <td>60 DAYS</td>
-							  <td><input type="button" value="TAG"></td>
-							</tr>
-							<tr>
-							  <td>LPA</td>
-							  <td>6578</td>
-							  <td>2019</td>
-							  <td>ILLEGAL ACTIVITY</td>
-							  <td>STOPPAGE OF INC.</td>
-							  <td>08/08/2021</td>
-							  <td>NO</td>
-							  <td>90 DAYS</td>
-							  <td><input type="submit" value="TAG"></td>
-							</tr>
-							<tr>
-							  <td>RSA</td>
-							  <td>2158</td>
-							  <td>2020</td>
-							  <td>DRUGS CONNECTION</td>
-							  <td>RECRUITMENT</td>
-							  <td>11/07/2021</td>
-							  <td>YES</td>
-							  <td>120DAYS</td>
-							  <td><input type="submit" value="TAG"></td>
-							</tr>
+							
 							</tbody>
 							</table>
 							</div>
