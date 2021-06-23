@@ -126,30 +126,162 @@
 							
 								<form action="/">
 									
-									<label>Case Nature</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<label>Case No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<label>Case Year</label>
-									
-									<br>
-									<select>
-										<option selected disabled>--Select Nature--</option>
-										<option>CWP</option>
-										<option>COCP</option>
-										<option>LPA</option>
-										<option>RSA</option>
-										<option>RA</option>
-										<option>SLT</option>
-										<option>FAO</option>
-										<option>RFA</option>
-									</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="text" id="cno" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<select>
-										<option selected disabled>--Select Year--</option>
-										<option>2020</option>
-										<option>2019 </option>
-										<option>2018</option>
-									</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="submit" value="Save" class="w3-button w3-theme w3-center">
+										<label>Court</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Case Year</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label for="ctitle">Title of case</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Rank of Petitioner</label><br>
+						<select selected name="court"  id="court" required>
+							<option  value="" >--Select Court--</option>
+							<option value="Supreme Court">Supreme Court</option>
+							<option value="High Court">High Court</option>
+							<option value="Session Court">Session Court</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select selected name="casetype" id="casetype" required>
+							<option value="" >--Select Case Type--</option>
+							<option value="CWP">CWP</option>
+							<option value="COCP">COCP</option>
+							<option value="LPA">LPA</option>
+							<option value="RSA">RSA</option>
+							<option value="RA">RA</option>
+							<option value="SLT">SLT</option>
+							<option value="FAO">FAO</option>
+							<option value="RFA">RFA</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="casenum" id="casenum" required>&nbsp;
+						<select selected name="caseyear" id="caseyear" required>
+							<option  value="" >--Select Year--</option>
+							<option value="2021">2021</option>
+							<option value="2020">2020</option>
+							<option value="2019">2019 </option>
+							<option value="2018">2018</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="casetitle" id="casetitle" required>&nbsp;
+						<select selected name="rank" id="rank" required>
+							<option value="">--Select Rank--</option>
+							<option value="DGP">DGP</option>
+							<option value="ADGP">ADGP</option>
+							<option value="DIG">DIG</option>
+							<option value="IG">IG</option>
+							<option value="SP">SP</option>
+							<option value="DSP">DSP</option>
+							<option value="Inspector">Inspector</option>
+							<option value="SI">SI</option>
+							<option value="ASI">ASI</option>
+							<option value="HC">HC</option>
+							<option value="Constable">Constable</option>
+						</select>
+						
+						<br><br>
+						
+						<label>Subject Matter</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Unit</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Branch</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Present Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Written Statement</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Next Hearing Date</label>
+						<br>
+						<select selected name="Subjctmatter" id="Subjctmatter" required>
+							<option value="">--Select Subject--</option>
+							<option value="ACR">ACR</option>
+							<option value="ACP SCALE">ACP SCALE </option>
+							<option value="INCREMENT STOPPAGE">INCREMENT STOPPAGE</option>
+							<option value="RECRUITMENT">RECRUITMENT</option>
+						</select>&nbsp;
+						<select selected name="unit" id="unit" required>
+							<option value="">--Select Unit--</option>
+							<option value="Gurugram">Gurugram</option>
+							<option value="Faridabad">Faridabad</option>
+							<option value="Panchkula">Panchkula</option>
+							<option value="Ambala">Ambala</option>
+							<option value="Kurukshetra">Kurukshetra</option>
+							<option value="Yamunanagar">Yamunanagar</option>
+							<option value="Karnal">Karnal</option>
+							<option value="Kaithal">Kaithal</option>
+							<option value="Panipat">Panipat</option>
+							<option value="Rohtak">Rohtak</option>
+							<option value="Sonipat">Sonipat</option>
+							<option value="Jhajjar">Jhajjar</option>
+							<option value="Bhiwani">Bhiwani</option>
+							<option value="Charkhi Dadri">Charkhi Dadri</option>
+							<option value="Hisar">Hisar</option>
+							<option value="Sirsa">Sirsa</option>
+							<option value="Jind">Jind</option>
+							<option value="Fatehabad">Fatehabad</option>
+							<option value="Hansi">Hansi</option>
+							<option value="Rewari">Rewari</option>
+							<option value="Mahendergarh">Mahendergarh</option>
+							<option value="Ambala Range">Ambala Range</option>
+							<option value="Karnal Range">Karnal Range</option>
+							<option value="ADGP/Railways">ADGP/Railways</option>
+							<option value="IGP/PTC, Sunaria">IGP/PTC, Sunaria</option>
+							<option value="CID">CID</option>
+							<option value="State Crime Branch">State Crime Branch</option>
+							<option value="SCRB">SCRB</option>
+							<option value="HPA, Madhuban">HPA, Madhuban</option>
+							<option value="Traffic">Traffic</option>
+							<option value="HSNCB">HSNCB</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select selected name="Branch" id="Branch" required>
+							<option value="">--Select Branch/ PHQ--</option>
+							<option value="Special Cell">Special Cell</option>
+							<option value="Training Branch">Training Branch</option>
+							<option value="HSPSA">HSPSA</option>
+							<option value="Complaint Branch">Complaint Branch</option>
+							<option value="GA Branch">GA Branch</option>
+							<option value="Community Branch">Community Branch</option>
+							<option value="Law & Order Branch">Law & Order Branch</option>
+							<option value="Estt-III Branch">Estt-III Branch</option>
+							<option value="Account Branch">Account Branch</option>
+							<option value="Provising Branch">Provising Branch</option>
+							<option value="Estt.-II Branch">Estt.-II Branch</option>
+							<option value="Women Safety Cell">Women Safety Cell</option>
+							<option value="Welfare Branch">Welfare Branch</option>
+							<option value="RTI Cell">RTI Cell</option>
+							<option value="NRI Cell">NRI Cell</option>
+							<option value="JVC Cell">JVC Cell</option>
+							<option value="SJW Branch">SJW Branch</option>
+							<option value="Estt-I Branch">Estt-I Branch</option>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select selected name ="nextdate" id ="nextdate" required>
+						<option value="Next Date Fix">Next Date Fix</option>
+							<!--<option selected disabled>--Select Status--</option>
+							<option>Admitted</option>
+							<option>No Date Fixed  </option>
+							<option>Allowed</option>
+							<option>Dispossed Off</option>
+							<option>Dismissed</option>
+							<option>Sine Die</option>-->
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select disabled>
+							<option selected disabled>--Select--</option>
+							<option>NO</option>
+							<option>YES</option>
+							
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="date" name="hearingdate" id="hearingdate" required>
+						
+						<br><br>
+						<label>Operative part of Order</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<label>Action Taken</label>
+						<br>
+						<textarea rows="3" cols="65" name="oprative" id="oprative" required ></textarea>
+						<textarea rows="3" cols="65" name="action" id="action" required></textarea>
+						
+						<br><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="button" name="button" class="w3-button w3-theme w3-center"  value="Submit" onclick="AddRow()">
+						<!--<input type="submit" class="w3-button w3-theme w3-center">-->
+						
+						<!--<label>Alert Type:</label><select>
+							<option selected disabled>--Select--</option>
+							<option>STAY</option>
+							<option>INTERIM DIRECTION</option>
+							<option>PERSONAL APPEARANCE</option>
+						</select>-->
+					
+					
 									<br><br>
 									
 																	
